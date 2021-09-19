@@ -1,0 +1,75 @@
+.head{
+    width: 80%;
+    font-size: 50px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+
+}
+
+body{
+    background-color: #5DA3BF;
+}
+
+.cssobjects{
+    font-family: 'Besley', serif;
+    font-size: 15px;
+}
+
+#camera{
+    border-style:outset;
+    border-width: 0px;
+
+    /*change the width when attaching the webcam*/
+    border-color: crimson;
+}
+
+#picture{
+    border-style: dotted;
+    border-width: 0px;
+}
+
+label{
+    font-family: 'Almarai', sans-serif;
+    font-size: 25px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-child{
+    flex:1;
+    
+}
+
+.flex-child:first-child{
+    margin-right: 20px;
+}
+
+.firstone{
+    background-color:lightsteelblue;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 200px;
+    
+}
+
+.secondone{
+    background-color:lightslategray;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.btn {
+    background-color: lightskyblue;
+    border: none;
+    color: white;
+    padding: 3px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: 20%;
+    
+  }
+
+  

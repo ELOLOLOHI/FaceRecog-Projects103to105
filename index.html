@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <title>Face recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&display=swap" rel="stylesheet">'<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Besley:wght@500&family=IBM+Plex+Sans+Arabic:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&family=Besley:wght@500&family=IBM+Plex+Sans+Arabic:wght@300&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+      <center>
+          
+      <h1 class="head btn-default">Face Recognition App</h1>
+      <br>
+      <hr>
+      <br>
+      <br>
+      <br>
+  
+<div class="flex-container">
+    
+    
+
+      <br><br>
+<div class="flex-child container firstone">
+      <p style="font-size: 27px;" class="text-capitalize">This Model is trained to identify the following family members: </p>
+    
+
+      <b class="cssobjects">
+          <hr>
+        Father
+        <br>
+        <br>
+        <hr>
+        Mother
+        <br>
+        <br>
+        <hr>
+        Brother
+        <br>
+        <br>
+        <hr>
+        Sister
+        <br>
+        <br>
+        <hr>
+
+      </b>
+      <br>
+      <span>
+        <label style="font-size: 20px;">Family Member:<span id="result_member"></span></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label style="font-size: 20px;">Accuracy: <span id="result_accuracy"></span></label>
+      </span>
+      <div>
+        <br>
+      <span>
+        <button id="takepic" class="btn" onclick="takepic()">Take Pic</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="identify" class="btn" onclick="identify()">Identify</button>
+      </span>
+      <br>
+      <br>
+      <br>
+      </div>
+</div>
+
+<div class="flex-child secondone">
+  <div class="otherdiv">
+      
+      <br>
+
+      <label>Webcam View - </label>
+
+      <br><br>
+
+     
+      <div id="camera"></div>
+
+      <br><br>
+      </div>
+      <div class="movediv">
+
+      <label>Picture -</label>
+
+      <div id="picture"></div>
+
+      <br><br>
+      </div>
+    
+    
+  </div>
+      </center>
+<script src="main.js"></script>
+
+  </body>
+</html>
